@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* width:100vw;
+            height:100vh; */
+            display: grid;
+            grid-template-areas: 
+            "profile  content content"
+            "contact content  content"
+            "contact content  content";
+        }
+
+        .profile{
+            grid-area: profile;
+            background-color:#56c7e9;
+            padding:50px;
+            text-align: center;
+        }
+
+        .profile img{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            display: block;
+            margin:20px auto;
+
+        }
+
+        .personal{
+            grid-area: contact;
+            background-color: #3c403f;
+            color:white;
+            padding:30px;
+        }
+
+        .personal div{
+            margin: 40px 0;
+        }
+
+        .personal ul{
+            margin:30px;
+        }
+
+        .content{
+            grid-area: content;
+            padding:20px 50px;
+        }
+
+        .content div{
+            margin:30px 0;
+        }
+
+        .content .roof{
+            margin:10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        hr{
+            margin: 5px 0 20px 0;
+        }
+
+        .content div .cards{
+            margin: 0 ;
+            padding: 0;
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .cards p{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./gettyimages-1179420343-612x612.jpg" alt="">
+            <h1>Ravi Sharma</h1>
+            <p>Graphic Designer</p>
+        </div>
+
+        <div class="personal">
+            <div>
+                <h2>CONTACT</h2>
+                <hr>
+                <div class="card">
+                    <h4>Phone</h4>
+                    <p>123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h4>Email</h4>
+                    <p>hello@gmail.com</p>
+                </div>
+                <div class="card">
+                    <h4>Address</h4>
+                    <p>128, Street No 2, Ludhiana</p>
+                </div>
+            </div>
+
+
+            <div>
+                <h2>EDUCATION</h2>
+                <hr>
+                <div class="card">
+                    <h4>2005 - 2009</h4>
+                    <h4>Bachelor of Design</h4>
+                    <p>Fauget University</p>
+                </div>
+
+                <div class="card">
+                    <h4>2005 - 2009</h4>
+                    <h4>Bachelor of Design</h4>
+                    <p>Fauget University</p>
+                </div>
+            </div>
+
+            <div>
+                <h2>LANGUAGE</h2>
+                <hr>
+                <ul>
+                    <li>English</li>
+                    <li>Spanish</li>
+                    <li>Indonesia</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div>
+                <h2>PROFILE INFO</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi dolores natus delectus temporibus explicabo blanditiis maxime nisi recusandae doloremque saepe nobis, ducimus provident facere nemo iste quia laudantium hic esse nihil! Itaque consectetur officia unde nulla nostrum, aperiam magni ullam laudantium, perferendis, eius ex deserunt quidem consequuntur pariatur dicta?</p>
+            </div>
+
+            <div>
+                <h2>WORK EXPERIENCE</h2>
+                <hr>
+                <div class="card">
+                    <div class="roof">
+                        <h4>Junior Graphic Designer</h4>
+                        <h4>2012 - 2015</h4>
+                    </div>
+                    <h4>Borcelle Studios</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="card">
+                    <div class="roof">
+                        <h4>Junior Graphic Designer</h4>
+                        <h4>2012 - 2015</h4>
+                    </div>
+                    <h4>Borcelle Studios</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="card">
+                    <div class="roof">
+                        <h4>Junior Graphic Designer</h4>
+                        <h4>2012 - 2015</h4>
+                    </div>
+                    <h4>Borcelle Studios</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div>
+                <h2>MY SKILLS & EXPERTISE</h2>
+                <hr>
+                <div class="cards">
+                    <div class="left-card">
+                        <p>Graphic Designer</p>
+                        <p>Web Design</p>
+                        <p>Video Editing</p>
+                    </div>
+                    <div class="right-card">
+                        <p>Branding</p>
+                        <p>Photography</p>
+                        <p>SEO & Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reference">
+                <h2>MY REFERENCE</h2>
+                <hr>
+                <div class="cards">
+                    <div class="left-card">
+                        <h4>Harumi kobayashi</h4>
+                        <p>Wardiere Inc. / CEO</p>
+                        <p>123-456-7890 </p>
+                    </div>
+                    <div class="right-card">
+                        <h4>Harumi kobayashi</h4>
+                        <p>Wardiere Inc. / CEO</p>
+                        <p>123-456-7890 </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+
+    </div>
+</body>
+</html>
